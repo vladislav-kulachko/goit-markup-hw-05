@@ -511,7 +511,7 @@ img {
   transform: translateY(100%);
   position: absolute;
   bottom: 0;
-  /* transition: transform 2500ms var(--main-trans-tm-func); */
+  transition: transform 250ms var(--main-trans-tm-func);
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
   font-size: 18px;
@@ -521,19 +521,5 @@ img {
   color: var(--white-color);
 }
 .project-view:hover .overlay {
-  transition: transform 500ms var(--main-trans-tm-func);
-  /* animation: trans-rot 250ms var(--main-trans-tm-func); */
-  /* animation-fill-mode: forwards; */
   transform: translateY(0%) rotate(360deg);
 }
-.overlay.new-orlean::after {
-  content: "Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.";
-}
-/* @keyframes trans-rot {
-  0% {
-    transform: translateY(100%) rotate(0deg);
-  }
-  100% {
-    transform: translateY(0%) rotate(360deg);
-  }
-} */

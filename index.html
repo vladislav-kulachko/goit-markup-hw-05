@@ -57,7 +57,7 @@
     <section class="order-service">
       <div class="container">
         <h1 class="order-service-head">Эффективные решения для вашего бизнеса</h1>
-        <button class="order-service-button" type="button">Заказать услугу</button>
+        <button class="order-service-button" type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
 
@@ -65,7 +65,7 @@
 
     <section class="advantage">
       <div class="container">
-        <h2 style="display:none;">Наши достоинства, качества, умения</h2>
+        <h2 hidden>Наши достоинства, качества, умения</h2>
         <ul class="advantage-list">
           <li class="advantage-item">
             <div class="advantage-icon-box"><svg class="advantage-icon">
@@ -118,13 +118,13 @@
         <h2 class="work-header">Чем мы занимаемся</h2>
         <ul class="work-list">
           <li class="work-img">
-            <img src="img/img-1.jpg" width="370" alt="Десктопные приложения" />
+            <img src="./img/img-1.jpg" width="370" alt="Десктопные приложения" />
             <p class="work-label">Десктопные приложения</p>
           </li>
-          <li class="work-img"><img src="img/img-2.jpg" width="370" alt="Мобильные приложения" />
+          <li class="work-img"><img src="./img/img-2.jpg" width="370" alt="Мобильные приложения" />
             <p class="work-label">Мобильные приложения</p>
           </li>
-          <li class="work-img"><img src="img/img-3.jpg" width="370" alt="Дизайн" />
+          <li class="work-img"><img src="./img/img-3.jpg" width="370" alt="Дизайн" />
             <p class="work-label">Дизайнерские решения</p>
           </li>
         </ul>
@@ -138,7 +138,7 @@
         <h2 class="team-header">Наша команда</h2>
         <ul class="team-list">
           <li class="staff-card">
-            <img class="img-staff" src="img/игорь-демьяненко.jpg" width="270" alt="игорь-демьяненко" />
+            <img class="img-staff" src="./img/игорь-демьяненко.jpg" width="270" alt="игорь-демьяненко" />
             <div class="staff-info">
               <h3 class="staff-name">Игорь Демьяненко</h3>
               <p class="staff-function">Product Designer</p>
@@ -175,7 +175,7 @@
             </div>
           </li>
           <li class="staff-card">
-            <img class="img-staff" src="img/ольга-репина.jpg" width="270" alt="ольга-репина" />
+            <img class="img-staff" src="./img/ольга-репина.jpg" width="270" alt="ольга-репина" />
             <div class="staff-info">
               <h3 class="staff-name">Ольга Репина</h3>
               <p class="staff-function">Frontend Developer</p>
@@ -212,7 +212,7 @@
             </div>
           </li>
           <li class="staff-card">
-            <img class="img-staff" src="img/николай-тарасов.jpg" width="270" alt="николай-тарасов" />
+            <img class="img-staff" src="./img/николай-тарасов.jpg" width="270" alt="николай-тарасов" />
             <div class="staff-info">
               <h3 class="staff-name">Николай Тарасов</h3>
               <p class="staff-function">Marketing</p>
@@ -249,7 +249,7 @@
             </div>
           </li>
           <li class="staff-card">
-            <img class="img-staff" src="img/михаил-ермаков.jpg" width="270" alt="михаил-ермаков" />
+            <img class="img-staff" src="./img/михаил-ермаков.jpg" width="270" alt="михаил-ермаков" />
             <div class="staff-info">
               <h3 class="staff-name">Михаил Ермаков</h3>
               <p class="staff-function">UI Designer</p>
@@ -399,6 +399,13 @@
       </section>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal is-hidden" data-modal>
+      <button class="button-close" type="button" data-modal-close></button>
+      <p></p>
+    </div>
+  </div>
+  <script src="./modal.js"></script>
 </body>
 
 </html>
